@@ -2,4 +2,4 @@
 
 # Referring this UI
 
-![image](/reference.png)
+![image](/static/reference.png)
