@@ -1,0 +1,39 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "name": "Chloe",
+      "info": "Full time Traveller, Foodie, Love to make new Friends, Always Sleeping.",
+      "similarity": 85,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 2,
+      "name": "Emily",
+      "info": "Creating a life, I love",
+      "similarity": 69,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 3,
+      "name": "Emma",
+      "info": "Simplicity is the key to happiness.",
+      "similarity": 96,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 4,
+      "name": "Aaliyah",
+      "info": "She turned her can't into can and her dreams into plans.",
+      "similarity": 61,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 5,
+      "name": "Lauren",
+      "info": "Creating my own sunshine.",
+      "similarity": 55,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    }
+  ]
+}

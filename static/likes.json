@@ -1,0 +1,34 @@
+{
+  "likes": [
+    {
+      "id": 1,
+      "name": "Chloe",
+      "distance": 85,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 2,
+      "name": "Emily",
+      "distance": 69,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 3,
+      "name": "Emma",
+      "distance": 96,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 4,
+      "name": "Aaliyah",
+      "distance": 61,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 5,
+      "name": "Lauren",
+      "distance": 55,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    }
+  ]
+}
