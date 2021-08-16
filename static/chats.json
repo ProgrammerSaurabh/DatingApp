@@ -1,0 +1,58 @@
+{
+  "chats": [
+    {
+      "id": 1,
+      "user": 2,
+      "chats": [
+        {
+          "to": 1,
+          "from": 2,
+          "content": "Hey there",
+          "time": "09:50 AM"
+        },
+        {
+          "to": 2,
+          "from": 1,
+          "content": "Hey, how are you?",
+          "time": "09:50 AM"
+        },
+        {
+          "to": 1,
+          "from": 2,
+          "content": "I'm good, how about you? what you doing?",
+          "time": "09:51 AM"
+        },
+        {
+          "to": 2,
+          "from": 1,
+          "content": "I'm great, nothing just making something to eat.",
+          "time": "11:50 AM"
+        },
+        {
+          "to": 1,
+          "from": 2,
+          "content": "Oh Great! I'm at work",
+          "time": "11:51 AM"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "user": 3,
+      "chats": [
+        {
+          "to": 1,
+          "from": 2,
+          "content": "Hey there",
+          "time": "12:50 PM"
+        },
+        {
+          "to": 2,
+          "from": 1,
+          "content": "Hey, how are you?",
+          "time": "14:50 PM"
+        }
+      ]
+    }
+  ]
+}

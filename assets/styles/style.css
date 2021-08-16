@@ -182,6 +182,11 @@ body {
 .mr-5 {
   margin-right: 48px;
 }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Margin */
 
 /* Padding */

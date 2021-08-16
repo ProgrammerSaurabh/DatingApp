@@ -2,6 +2,13 @@
   "persons": [
     {
       "id": 1,
+      "name": "Saurabh",
+      "info": "Passionate to learn new technologies.",
+      "similarity": 99,
+      "image": "https://source.unsplash.com/random?fit=crop&fm=jpg&h=400&q=60&w=200"
+    },
+    {
+      "id": 2,
       "name": "Chloe",
       "info": "Full time Traveller, Foodie, Love to make new Friends, Always Sleeping.",
       "similarity": 85,

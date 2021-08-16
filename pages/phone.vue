@@ -13,7 +13,7 @@
         <input type="number" v-model="phone" class="custom-input w-full" />
       </div>
 
-      <Button text="Continue" class="mt-4 color-button" @click="$router.push('/otp')"></Button>
+      <Button text="Continue" class="mt-4 color-button mx-auto" @click="$router.push('/otp')"></Button>
     </div>
   </section>
 </template>

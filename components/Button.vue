@@ -32,6 +32,7 @@ export default {
   outline: none;
 
   width: 100%;
+  max-width: 300px;
 }
 
 .button:focus {

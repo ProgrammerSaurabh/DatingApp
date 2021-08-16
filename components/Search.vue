@@ -39,7 +39,7 @@ export default {
   },
   async beforeMount() {
     const { data } = await this.$axios.get("/persons.json");
-    this.persons = data.persons;
+    this.persons = data.persons.filter((person) => person.id != 1);
   },
 };
 </script>

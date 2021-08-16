@@ -31,15 +31,12 @@
             <h6 class="text-theme h6">I am a</h6>
             <div class="options flex align-center pt-1">
               <div
+                v-for="(gender,genderIndex) in genders"
+                :key="genderIndex"
                 class="option cursor-pointer flex justify-center align-center"
-                :class="profile.gender == 'Male' ? 'bg-theme text-white' : ''"
-                @click="profile.gender = 'Male'"
-              >Male</div>
-              <div
-                class="option cursor-pointer flex justify-center align-center"
-                :class="profile.gender == 'Female' ? 'bg-theme text-white' : ''"
-                @click="profile.gender = 'Female'"
-              >Female</div>
+                :class="profile.gender == gender ? 'bg-theme text-white' : ''"
+                @click="profile.gender = gender"
+              >{{gender}}</div>
             </div>
           </div>
 
@@ -47,20 +44,12 @@
             <h6 class="text-theme h6">Who are you interested in ?</h6>
             <div class="options flex align-center pt-1">
               <div
+                v-for="(interested,interestedIndex) in interesteds"
+                :key="interestedIndex"
                 class="option cursor-pointer flex justify-center align-center"
-                :class="profile.interested == 'Man' ? 'bg-theme text-white' : ''"
-                @click="profile.interested = 'Man'"
-              >Man</div>
-              <div
-                class="option cursor-pointer flex justify-center align-center"
-                :class="profile.interested == 'Woman' ? 'bg-theme text-white' : ''"
-                @click="profile.interested = 'Woman'"
-              >Woman</div>
-              <div
-                class="option cursor-pointer flex justify-center align-center"
-                :class="profile.interested == 'Everyone' ? 'bg-theme text-white' : ''"
-                @click="profile.interested = 'Everyone'"
-              >Everyone</div>
+                :class="profile.interested == interested ? 'bg-theme text-white' : ''"
+                @click="profile.interested = interested"
+              >{{interested}}</div>
             </div>
           </div>
 
@@ -119,17 +108,17 @@
 
         <Button
           :text="steps[step]"
-          class="mt-4 color-button"
+          class="mt-4 color-button mx-auto"
           v-if="step < steps.length - 1"
           @click="nextStep"
         ></Button>
-        <Button text="Done" class="mt-4 color-button" v-else @click="submit"></Button>
+        <Button text="Done" class="mt-4 color-button mx-auto" v-else @click="submit"></Button>
       </div>
       <div v-else>
         <Logo style="color: white" />
         <p>Dear user your account has been created successfully. Continue to start using app.</p>
 
-        <Button @click="$router.push('/home')" text="Continue"></Button>
+        <Button @click="$router.push('/home')" text="Continue" class="mx-auto"></Button>
       </div>
     </div>
   </section>
@@ -153,6 +142,8 @@ export default {
   data() {
     return {
       steps: ["Add Your Photo", "Continue", "Continue", ""],
+      genders: ["Male", "Female"],
+      interesteds: ["Man", "Woman", "Everyone"],
       step: 0,
       profile: {
         photo: null,

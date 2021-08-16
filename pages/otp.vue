@@ -14,7 +14,7 @@
       </div>
 
       <div>
-        <Button text="Continue" class="mt-4 color-button" @click="$router.push('/profile')"></Button>
+        <Button text="Continue" class="mt-4 color-button mx-auto" @click="$router.push('/profile')"></Button>
         <div class="flex align-center justify-between flex-row mt-5 footer-para">
           <p class="cursor-pointer">Terms of Service</p>
           <p class="cursor-pointer">Privacy Policy</p>

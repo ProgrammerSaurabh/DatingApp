@@ -9,9 +9,17 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      chats: [],
+      persons: [],
+    };
   },
-  async beforeMount() {},
+  async beforeMount() {
+    const { data: chats } = await this.$axios.get("/chats.json");
+    const { data: persons } = await this.$axios.get("/persons.json");
+    this.chats = chats.chats;
+    this.persons = persons.persons;
+  },
 };
 </script>
 
