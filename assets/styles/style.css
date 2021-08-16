@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 
 :root {
@@ -28,6 +28,14 @@ body {
 
 .text-white {
   color: white !important;
+}
+
+.text-muted {
+  color: #d2d2d2 !important;
+}
+
+.text-black {
+  color: black !important;
 }
 
 .display-1 {
@@ -104,43 +112,53 @@ body {
 }
 
 .mx-1 {
-  margin: 0px 8px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .mx-2 {
-  margin: 0px 16px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .mx-3 {
-  margin: 0px 24px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .mx-4 {
-  margin: 0px 36px;
+  margin-left: 36px;
+  margin-right: 36px;
 }
 
 .mx-5 {
-  margin: 0px 48px;
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 .my-1 {
-  margin: 8px 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .my-2 {
-  margin: 16px 0px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .my-3 {
-  margin: 24px 0px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .my-4 {
-  margin: 36px 0px;
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 
 .my-5 {
-  margin: 48px 0px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .ml-1 {
@@ -211,43 +229,53 @@ body {
 }
 
 .px-1 {
-  padding: 0px 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .px-2 {
-  padding: 0px 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .px-3 {
-  padding: 0px 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .px-4 {
-  padding: 0px 36px;
+  padding-left: 36px;
+  padding-right: 36px;
 }
 
 .px-5 {
-  padding: 0px 48px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .py-1 {
-  padding: 8px 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .py-2 {
-  padding: 16px 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .py-3 {
-  padding: 24px 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .py-4 {
-  padding: 36px 0px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .py-5 {
-  padding: 48px 0px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .pt-1 {
@@ -358,6 +386,10 @@ body {
 
 .flex-grow-1 {
   flex-grow: 1;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 /* Flex */
 

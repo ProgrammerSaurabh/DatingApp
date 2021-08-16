@@ -3,6 +3,7 @@
     {
       "id": 1,
       "user": 2,
+      "online": true,
       "chats": [
         {
           "to": 1,
@@ -33,12 +34,49 @@
           "from": 2,
           "content": "Oh Great! I'm at work",
           "time": "11:51 AM"
+        },
+        {
+          "to": 1,
+          "from": 2,
+          "content": "Ohhhh!",
+          "time": "11:55 AM"
+        },
+        {
+          "to": 2,
+          "from": 1,
+          "content": "How's your work going?",
+          "time": "12:01 PM"
+        },
+        {
+          "to": 1,
+          "from": 2,
+          "content": "Enjoying...",
+          "time": "12:30 PM"
+        },
+        {
+          "to": 2,
+          "from": 1,
+          "content": "What about yours?",
+          "time": "01:50 PM"
+        },
+        {
+          "to": 1,
+          "from": 2,
+          "content": "Same, but looking for a job change.",
+          "time": "01:53 PM"
+        },
+        {
+          "to": 2,
+          "from": 1,
+          "content": "Ohhh, try in mine.",
+          "time": "01:53 PM"
         }
       ]
     },
     {
       "id": 1,
       "user": 3,
+      "online": false,
       "chats": [
         {
           "to": 1,
@@ -50,7 +88,7 @@
           "to": 2,
           "from": 1,
           "content": "Hey, how are you?",
-          "time": "14:50 PM"
+          "time": "02:50 PM"
         }
       ]
     }
