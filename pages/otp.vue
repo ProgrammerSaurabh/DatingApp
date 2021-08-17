@@ -10,11 +10,22 @@
       </p>
 
       <div class="mt-5 flex align-center">
-        <input type="number" class="custom-input w-full" />
+        <input
+          type="text"
+          class="otp-input"
+          autofocus
+          v-for="digit in digits"
+          :key="digit"
+          maxlength="1"
+          :ref="`digit-${digit}`"
+          @keyup="next(digit)"
+          v-model="otp[digit]"
+        />
       </div>
+      <div v-show="error" class="error-div">{{ error }}</div>
 
       <div>
-        <Button text="Continue" class="mt-4 color-button mx-auto" @click="$router.push('/profile')"></Button>
+        <Button text="Continue" class="mt-4 color-button mx-auto" @click="submit"></Button>
         <div class="flex align-center justify-between flex-row mt-5 footer-para">
           <p class="cursor-pointer">Terms of Service</p>
           <p class="cursor-pointer">Privacy Policy</p>
@@ -30,6 +41,33 @@ export default {
     return {
       title: "Otp",
     };
+  },
+  data() {
+    return {
+      digits: 4,
+      currentField: 1,
+      otp: [],
+      error: null,
+    };
+  },
+  methods: {
+    next(digit) {
+      if (digit != this.digits) {
+        if (
+          this.$refs["digit-" + (digit + 1)] &&
+          this.$refs["digit-" + (digit + 1)].length > 0
+        ) {
+          this.$refs["digit-" + (digit + 1)][0].focus();
+          return;
+        }
+      }
+    },
+    submit() {
+      if (this.otp.join("").length != this.digits) {
+        return (this.error = "Please enter " + this.digits + " digit OTP");
+      }
+      this.$router.push("/profile");
+    },
   },
 };
 </script>
@@ -48,16 +86,20 @@ p {
   max-width: 45ch;
 }
 
-.custom-input {
+.otp-input {
   padding: 5px;
-  border: none;
   background-color: transparent;
-  border-bottom: 1px solid #d2d2d2;
+  border: 1px solid #d2d2d2;
   font-size: 26px;
   color: var(--theme-color);
+  text-align: center;
 }
 
-.custom-input:focus {
+.otp-input:not(:last-child) {
+  margin-right: 5px;
+}
+
+.otp-input:focus {
   outline: none;
   border-bottom: 1px solid var(--theme-color);
 }

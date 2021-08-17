@@ -510,6 +510,17 @@ input::-ms-input-placeholder {
   font-weight: 500;
 }
 
+/* Error */
+.error-div {
+  padding: 5px 10px;
+  background-color: #ff5252;
+  color: white;
+  border-radius: 5px;
+  margin: 5px 0px;
+  font-size: 14px;
+}
+/* Error */
+
 .container-sm {
   max-width: 600px;
   margin: 0 auto;

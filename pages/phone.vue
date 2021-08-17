@@ -10,10 +10,17 @@
         <select class="custom-select" v-model="code">
           <option v-for="(code,index) in codes" :key="index">{{ code }}</option>
         </select>
-        <input type="number" v-model="phone" class="custom-input w-full" />
+        <input
+          type="number"
+          autofocus
+          v-model="phone"
+          class="custom-input w-full"
+          placeholder="XXXXXXXXXX"
+        />
       </div>
+      <div v-show="error" class="error-div">{{ error }}</div>
 
-      <Button text="Continue" class="mt-4 color-button mx-auto" @click="$router.push('/otp')"></Button>
+      <Button text="Continue" class="mt-4 color-button mx-auto" @click="validate"></Button>
     </div>
   </section>
 </template>
@@ -30,7 +37,18 @@ export default {
       codes: ["+91", "+63", "+94", "+60", "+95", "+855"],
       code: "+91",
       phone: "",
+      error: null,
     };
+  },
+  methods: {
+    validate() {
+      this.error = "";
+      if (this.phone.length != 10) {
+        return (this.error = "Please enter valid phone number.");
+      }
+
+      this.$router.push("/otp");
+    },
   },
 };
 </script>
@@ -65,6 +83,8 @@ p {
   border-bottom: 1px solid #d2d2d2;
   font-size: 20px;
   color: var(--theme-color);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .custom-select:focus {
