@@ -16,6 +16,7 @@
           v-model="phone"
           class="custom-input w-full"
           placeholder="XXXXXXXXXX"
+          @keydown.enter="validate"
         />
       </div>
       <div v-show="error" class="error-div">{{ error }}</div>

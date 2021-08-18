@@ -100,8 +100,7 @@ p {
 }
 
 .otp-input:focus {
-  outline: none;
-  border-bottom: 1px solid var(--theme-color);
+  border: 2px solid var(--theme-color);
 }
 
 .footer-para p {

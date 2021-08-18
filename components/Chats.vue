@@ -67,7 +67,7 @@
           autofocus
           placeholder="Type message here."
         />
-        <fa :icon="['fa','paper-plane']" class="text-theme cursor-pointer" />
+        <fa :icon="['fa','paper-plane']" @click="submit" class="pl-1 text-theme cursor-pointer" />
       </div>
     </div>
   </div>
